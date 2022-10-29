@@ -1,0 +1,32 @@
+h1{
+    background-color: rgb(169, 233, 169);
+    background-image: url(/*image*/);
+    /*background-attachment: fixed/scroll;*/
+    /*background-repeat:repeat-x,y;*/
+}/*here you can give background imges should be repeat ,position,u can set them in margin left and right*/
+div{
+    background-color: lightblue;
+}
+p{  font-family:  "Sofia"sans-serif;
+    /* font-size: 50px; */
+    text-shadow: 9px 2px 9px #f00;
+   /* background-color: blue;
+    opacity: 0.4;
+    border-top: greenyellow;*/
+}
+a.default{ background-color: red;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+/*u can set some border in body and paragraph like in paragraph (p.dotted,dashed,solid,outset,noneetc)*/
+google font family   =     ubuntu_and_lora,georgia_and_verdana,Abril Fatface and Poppins.
+
+
+
+
+Css Icons these are in Css topic file

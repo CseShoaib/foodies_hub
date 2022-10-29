@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  /* external,internal,inline css */
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mystyle.css_externalCss"> /* external ,internal*/
+    <link rel="stylesheet" href="Background.Css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  Google Icon
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">font icon
+    
+    <style>
+        table,th,td{
+            border: 2px solid blue;
+            border-collapse: collapse;
+            width: auto;
+            text-align: center;
+        }
+        
+
+        th,td{
+            border-collapse: collapse;
+            width: 100%;
+            padding: 15px;
+        }
+        tr:hover{background-color: coral;
+        color: white;}
+       a:hover{
+  color: yellow;
+}
+img{position: visible;
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  top: 0%;
+  left: 0%;
+  border: 2px 4px 5px #f00;
+  z-index: 1;
+}
+.imgdropdown {
+  display: inline-block;
+  position: relative;
+}
+.imgdropdown-content{
+  display: none;
+  z-index: 1;
+}
+.imgdropdown:hover .imgdropdown-content{
+  display: block; 
+}
+li.dropdown{
+  display: block;
+}
+.dropdown-content{
+  display: none;
+text-align: center;
+padding: 0px 17px;
+color: black;
+min-width: 170px;
+z-index: 1 ;
+box-shadow: 1px 3px 17px 0px #00f;
+position: static;
+}
+icons{
+  z-index: -1;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  border: 3px solid blue;
+  position: fixed;
+  overflow: auto;
+  top: 0%;
+  right: 0%;
+ 
+}
+li a ,.dropbtn{
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+li:last-child{
+  border-bottom: none;
+}
+li a.active {
+  background-color: #3e00ceaa;
+  color: white;
+}
+li a:hover:not(.active) ,.dropdown:hover .dropbtn {
+  background-color: rgb(23, 244, 23);
+  color: white;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.header{
+  text-align: center;
+  font-size: 46px;
+  display: block;
+  padding: 20px;
+}
+.topnav{
+  overflow: auto;
+  background-color: black;
+  border-radius: 50px;
+}
+.topnav a{
+  float: left;
+  text-align: center;
+  padding: 7px 21px;
+}
+.topnav a:hover{
+  color: blue;
+  background-color: yellow;
+}
+.column{
+  box-sizing: border-box;
+  float: left;
+  padding: 10px;
+}
+.column.main{
+  width: 75%;
+}
+.column.side{
+  width: 25%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px)
+{
+  .column.main,.column.side{
+    width: 100%;
+  }
+}
+    </style>/*these color value are have some property like Rgb,Rgba,hxl*/
+    <title>Css</title>
+</head>
+<body>              /*these color should be write in tomato,orange,gray,slateblue,MediumSeagreen etc*/
+  <img src="My_Photo.jpg.jpeg" alt="My-photo">
+    <h1 style="color:tomato;text-align: center;"> My First Css Example</h1>/*inline*/
+   <p style="font-family: Sofia;">
+   Boss="Shoaib Usmani"</p>
+   <a href="http://w3schools.com"style="font-family: Sofia;">link of legend </a><br>
+   
+  
+   <!-- <i class="fas fa-cloud"></i>
+   <i class="fas fa-heart"></i>
+   <i class="fas fa-car"></i>
+   <i class="fas fa-file"></i>
+   <i class="fas fa-bars"></i> -->
+   
+   <!-- <i>Styled Font Awesome icons (size and color):</i>
+   <i class="fas fa-cloud" style="font-size:24px;"></i>
+   <i class="fas fa-cloud" style="font-size:36px;"></i>
+   <i class="fas fa-cloud" style="font-size:48px;color:red;"></i>
+   <i class="fas fa-cloud" style="font-size:60px;color:lightblue;"></i> -->
+
+   <!-- icons{<i class="glyphicon glyphicon-cloud"style=font: size 50px;></i>
+<i class="glyphicon glyphicon-remove"></i>
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-envelope"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>}
+
+google icons -->
+<!-- <i class="material-icons">fa-cloud</i><br>
+<i class="material-icons">fa-computer</i>
+<i class="material-icons">fa-traffic</i>
+
+<a href="http://default" class="a.default">default link</a><br>
+
+
+<div><table>
+  </div><tr><th>firstname</th><th>lastname</th><th>marks</th> </tr>
+  <tr><td>Shoaib</td><td>Usmani</td><td>98%</td></tr>
+  <tr><td>Shoaib1</td><td>Usmani233</td><td>98%</td> </tr>
+  <tr><td>Shoaib2</td><td>Usmani24</td><td>98%</td></tr>
+  <tr><td>Shoaib3</td><td>Usmani134</td><td>98%</td></tr>
+</table></div> -->
+
+
+ <ul>
+<div><li class="imgdropdown"><a class="active"href="My_Photo.jpg.jpeg"width="15px "height="15px">Home</a>
+ <div class="imgdropdown-content"><img src="My_Photo.jpg.jpeg" alt="My_Photo"width="100px "height="100px"></div></li>
+  <li><a href="about">about</a></li>
+  <li><a href="#contact">contact</a></li>
+  <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">mark </a>
+  <div class="dropdown-content">
+    <a href="#friend" target="blank">beast</a>
+    <a href="#friend">rehman</a>
+    <a href="#friend">rahim</a>
+  </div></li></div>
+</ul>
+<div>
+  <h2>Fixed Full-height Side Nav</h2>
+  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+  <p>Some text..</p>
+</div> 
+
+<!-- Website_Layout -->
+<div class="header"><h1>Header</h1></div>
+
+<div class="topnav"><a  href="#" target="blank">link</a>
+  <a href="#">link</a>
+  <a href="#">link</a>
+</div>
+<div class="row">
+  <div class="column main"><h2>Main Coloumn</h2>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi aut labore 
+      laborum earum fugiat laudantium eos quidem incidunt ea excepturi officia,
+      molestiae placeat non iste veniam similique odit dicta. Eius illo provident eum?
+   </p>
+  </div>
+  <div class="column side"><h2>side column</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ad sapiente nemo laudantium amet at aliquam corporis maxime tenetur enim.</p></div>
+</div>
+<div class="header"><h1>Footer</h1></div>
+</body>
+</html><br>

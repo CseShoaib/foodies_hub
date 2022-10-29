@@ -1,0 +1,253 @@
+Css_text-
+
+Text_Decoration    =       overline,underline,line_Through.
+     Text_Decoration_Color  =     Red,Yellow,Purple,green,Blue.
+     Text_Decoration_Style  =     Solid,Double,dotted,dashed,wavy.
+     Text_Decoration_thickness = .
+
+Text_transform   =                  Uppercase,Lowercase,Capitalize.
+Text_Spacing     =               text indent,letter-spacing,line-height, word-spacing,white-space
+Text_Shadow      =            /* color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;*/  this syntax is used to give effect on text.
+
+Css font-family   =  sarif,sans-sarif,monospace,cursive,fantasy
+Css web safe font 
+font style  = normal,italic,oblique.
+font weight = normal,bold.
+font_variant = normal,small-caps.
+font-size =   pixel,em.   em=pixel/16.
+font-Google =  use this link for google font  =   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+body {
+  font-family: "Sofia /*as your wish*/", sans-serif;  Trirong font,audiowide .
+}
+</style>   for using of all type of google font use this link givn below:-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+
+font_awesome_Icons  = for using these icons use link in the fontawesomeicons.com like-----------
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+styling link like-----------
+
+The four links states are:
+
+a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked
+
+
+  Text_Decoration-------------
+   
+  diffrent list item marker---
+ 1 list style type     example = circle,sqare,lower roman,upper-alpha               
+ 
+ you have to define text inside the <ul><li></li></ul> tag
+ 2 list style position  example = outside,inside(bullet or marker in point).
+ 3 list style image
+
+
+ type-style-border = to create a table
+ css display --------------
+ these property are of two type - 1.block level element are
+ Examples of block-level elements:
+
+<div>
+<h1> - <h6>
+<p>
+<form>
+<header>
+<footer>
+<section>
+                                  2.inline_level_Element
+                                  Examples of inline elements:
+
+<span>
+<a>
+<img>
+
+Css layout position property-------------
+There are five different position values:
+
+static
+relative
+fixed
+absolute
+sticky
+
+CSS Layout - The z-index Property------------- 
+The z-index Property
+When elements are positioned, they can overlap other elements.
+
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+
+An element can have a positive or negative stack order
+z-index =-1,0,1,2,3
+like ([-1,0]background is behind the text) or ([0,1]image cover the text)
+      
+ Css overflow---------------
+
+ The overflow property has the following values:
+
+visible - Default. The overflow is not clipped. The content renders outside the element's box
+hidden - The overflow is clipped, and the rest of the content will be invisible
+scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+auto - Similar to scroll, but it adds scrollbars only when necessary 
+overflow-x 
+overflow-y
+
+
+Css float property---------
+
+The float property can have one of the following values:
+
+left - The element floats to the left of its container
+right - The element floats to the right of its container
+none - The element does not float (will be displayed just where it occurs in the text). This is default
+inherit - The element inherits the float value of its parent
+
+now clear property---(which is after float property)
+The clear property can have one of the following values:
+
+none - The element is not pushed below left or right floated elements. This is default
+left - The element is pushed below left floated elements
+right - The element is pushed below right floated elements
+both - The element is pushed below both left and right floated elements
+inherit - The element inherits the clear value from its parent
+
+
+clearfix hack---
+<!-- .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} -->
+
+
+ horizontal and vertical align ---------
+<!--To horizontally center a block element (like <div>), use margin: auto; -->
+center align element = 
+
+ center { margin:auto;
+width:50%;
+padding:10px;
+border:4px solid red;
+}
+
+center align text  =
+
+for text you should have to print 
+{text-align:center;}
+
+center an image  = 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+CSS Combinators----------------
+
+A combinator is something that explains the relationship between the selectors.
+
+A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+
+There are four different combinators in CSS:
+
+.descendant selector (space)
+.child selector (>)
+.adjacent sibling selector (+)
+.general sibling selector (~)
+
+<!-- What are Pseudo-classes?------------ -->
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+
+   <!-- CSS - The :lang Pseudo-class -->
+example=  <style>
+q:lang(no) {
+  quotes: "~" "~";
+}
+</style>
+
+<!-- pseudo element -->
+pseudo first line--  first letter-- before,after,marker,selection
+syntax is (p::first line{ color:red;
+ font-size:20px;
+ font-variant:small-caps;})
+
+ <!-- dropdown ---------- -->
+ <!-- Image_Gallery -->
+ <!-- Image_Sprite -->
+
+ <!-- Css[attributes] Selector -->
+ All CSS Attribute Selectors
+Selector	Example	Example description
+[attribute]	[target]	Selects all elements with a target attribute
+[attribute=value]	[target=_blank]	Selects all elements with target="_blank"
+[attribute~=value]	[title~=flower]	Selects all elements with a title attribute containing the word "flower"
+[attribute|=value]	[lang|=en]	Selects all elements with a lang attribute value starting with "en"
+[attribute^=value]	a[href^="https"]	Selects every <a> element whose href attribute value begins with "https"
+[attribute$=value]	a[href$=".pdf"]	Selects every <a> element whose href attribute value ends with ".pdf"
+[attribute*=value]	a[href*="w3schools"]Selects every <a> element whose href attribute value contains the substring "w3schools"
+
+<!-- Css Forms -->-----------
+Styling Input forms------
+ If you only want to style a specific input type, you can use attribute selectors:
+
+input[type=text] - will only select text fields
+input[type=password] - will only select password fields
+input[type=number] - will only select number fields
+etc..
+
+Focused Input------
+outline:none; (when we click you can give color in it or background)
+
+Input with icon/image()
+
+If you want an icon inside the input, use the background-image property and position it with the background-position property. Also notice that we add a large left padding to reserve the space of the icon:
+{ background-image:;
+  background-Position:;
+  background-repeat:;    }
+
+  Animated Search Input
+
+In this example we use the CSS transition property to animate the width of the search input when it gets focus. You will learn more about the transition property later, in our CSS Transitions chapter.
+
+Styling textAreas------
+{
+  resize:none;
+}
+styling menus------
+{
+  select-option-numbers(choose any one of them)inside the forms
+}
+Submit Button--------
+
+<!-- CSS Counters -->
+Automatic Numbering With Counters-----
+
+CSS counters are like "variables". The variable values can be incremented by CSS rules (which will track how many times they are used).
+
+To work with CSS counters we will use the following properties:
+
+counter-reset - Creates or resets a counter
+counter-increment - Increments a counter value
+content - Inserts generated content
+counter() or counters() function - Adds the value of a counter to an element
+
+To use a CSS counter, it must first be created with counter-reset.
+
+<!-- Specificity Hierarchy -->
+Every CSS selector has its place in the specificity hierarchy.
+
+There are four categories which define the specificity level of a selector:
+
+Inline styles - Example: <h1 style="color: pink;">
+IDs - Example: #navbar
+Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+Elements and pseudo-elements - Example: h1, :before
